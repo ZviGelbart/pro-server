@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>browser</title>
+
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* למרכז האלמנטים באופן אופקי */
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            width: 80%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+
+        .body {
+            width: 80%; /* קובע את הרוחב ל-80% */
+            padding: 20px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        #body {
+            width: 40%;
+            min-height: 120px;
+            box-sizing: border-box;
+            direction: rtl;
+        }
+
+        #external-source {
+            width: 40%;
+            min-height: 120px;
+            margin-left: 20px;
+            border: 1px solid black;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 10%; /* קובע את הרוחב ל-80% */
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <script type="module" src="./index.js"></script>
+
+    <label for="url"></label>
+    <input type="text" id="url" name="url" placeholder="URL">
+    
+    <div class="body">
+        <label for="text"></label>
+        <textarea id="body" name="body" placeholder="text"></textarea>
+        
+        <div id="external-source">
+            <!-- כאן תוכל להזין את הטקסט מהמקור האחר -->
+        </div>
+    </div>
+
+    <button id="submit">SEND</button>
+
+    
+
+    
+</body>
+</html>
